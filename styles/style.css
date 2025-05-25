@@ -52,15 +52,15 @@ ol {
 
 /* --- СТИЛИЗАЦИЯ СКРОЛЛБАРА --- */
 
-.content__list::-webkit-scrollbar {
+.content__list-container::-webkit-scrollbar {
   width: 4px;
 }
 
-.content__list::-webkit-scrollbar-track {
+.content__list-container::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.content__list::-webkit-scrollbar-thumb {
+.content__list-container::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
   border-radius: 2px;
 }
@@ -254,13 +254,13 @@ ol {
 
 .content__list-container {
   position: relative;
+  block-size: 298px;
+  overflow-y: auto;
 }
 
 .content__list {
   position: relative;
-  block-size: 298px;
   padding: 3px;
-  overflow-y: auto;
 }
 
 .content__list-item:not(:last-child) {
@@ -300,7 +300,6 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  min-height: 70px;
 }
 
 .content__video-card-title {
